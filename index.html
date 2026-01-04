@@ -426,11 +426,11 @@
 								border: 1px solid rgba(56,189,248,0.6); border-radius: 10px; z-index: 20; max-width: 400px; width: 400px; white-space: normal; box-shadow: 0 8px 18px rgba(15,23,42,0.9);">
 								<ul style="margin: 0; padding: 0; list-style: none; font-size: 0.8rem; color: var(--text); display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem;">
 								  <li style="font-weight: 600; color:#38bdf8;">Supported:</li>
-								  <li>OpenAI</li>
+								  <li>OpenAI, </li>
+								  <li>Perplexity (Unlock on Pro)</li>
 								</ul>
 								<ul style="margin: 0; padding: 0; list-style: none; font-size: 0.8rem; color: var(--text); display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem;">
 								  <li style="font-weight: 600; color:#38bdf8;">Upcoming:</li>
-								  <li>Perplexity,</li>
 								  <li>HuggingFace,</li>
 								  <li>Groq,</li>
 								  <li>Custom</li>
@@ -1296,8 +1296,8 @@ document.getElementById('codeContext').addEventListener('input', () => {
 				status.textContent = 'PRO mode (OpenAI)';
 				status.style.background = 'rgba(34,197,94,0.3)';
 			  } else if (provider === 'Perplexity') {
-				status.textContent = 'Upcoming (Perplexity)';
-				status.style.background = 'rgba(148,163,184,0.2)';
+				status.textContent = 'Unlock on Pro (Perplexity)';
+				status.style.background = 'rgba(34,197,94,0.3)';
 			  } else if (provider === 'Groq') {
 				status.textContent = 'Upcoming (Groq)';
 				status.style.background = 'rgba(148,163,184,0.2)';
